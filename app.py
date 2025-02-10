@@ -10,7 +10,7 @@ def main():
     user_input = st.text_area("Describe your process or workflow:", "Enter your process description here...")
 
     # Initialize LLM (Hugging Face Hub)
-    hf_api_key = "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"
+    hf_api_key = <secret_key>
     llm = HuggingFaceHub(repo_id="meta-llama/Llama-2-7b-chat-hf", huggingfacehub_api_token=hf_api_key)
 
     # VSM Extraction Prompt
